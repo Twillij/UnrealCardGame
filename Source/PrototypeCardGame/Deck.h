@@ -12,10 +12,10 @@ class PROTOTYPECARDGAME_API ADeck : public AActor
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "20"))
 	int MinimumDeckSize = 40;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "20"))
 	int MaximumDeckSize = 60;
 
 	UPROPERTY(BlueprintReadWrite)

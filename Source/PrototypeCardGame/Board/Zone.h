@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "../PrototypeCardGame.h"
 #include "Zone.generated.h"
 
 class ACard;
@@ -14,4 +15,8 @@ class PROTOTYPECARDGAME_API AZone : public AActor
 public:
 	UPROPERTY(BlueprintReadWrite)
 	ACard* Card;
+
+public:
+	UFUNCTION(BlueprintCallable)
+	void PlaceCard(ACard* NewCard, ECardPosition Position);
 };
