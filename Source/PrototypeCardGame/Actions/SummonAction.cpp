@@ -4,7 +4,7 @@
 
 USummonAction::USummonAction()
 {
-	ActionName = FText::FromString("Summon");
+	DisplayName = FText::FromString("Summon");
 }
 
 bool USummonAction::IsValidAction_Implementation()
@@ -19,9 +19,4 @@ void USummonAction::Execute_Implementation()
 	// To do: Select valid target zone
 
 	// To do: Do the summon
-}
-
-void USummonAction::Summon(AZone* TargetZone)
-{
-	TargetZone->PlaceCard(Card, ECardPosition::Standby);
 }

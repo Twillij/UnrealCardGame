@@ -1,21 +1,25 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/Player.h"
 #include "Summoner.generated.h"
 
 class UTeam;
 class ADeck;
+class AHand;
 
 UCLASS()
-class PROTOTYPECARDGAME_API USummoner : public UObject
+class PROTOTYPECARDGAME_API USummoner : public UPlayer
 {
 	GENERATED_BODY()
 	
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite)
 	UTeam* Team;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite)
 	ADeck* Deck;
+
+	UPROPERTY(BlueprintReadWrite)
+	ADeck* Hand;
 };

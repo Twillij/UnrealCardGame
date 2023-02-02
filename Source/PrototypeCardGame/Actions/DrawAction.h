@@ -2,20 +2,23 @@
 
 #include "CoreMinimal.h"
 #include "Action.h"
-#include "SummonAction.generated.h"
+#include "DrawAction.generated.h"
 
-class ASummonCard;
+class ADeck;
 
 UCLASS()
-class PROTOTYPECARDGAME_API USummonAction : public UAction
+class PROTOTYPECARDGAME_API UDrawAction : public UAction
 {
 	GENERATED_BODY()
 
 public:
-	USummonAction();
+	UDrawAction();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int DrawAmount = 1;
 
 	UPROPERTY(BlueprintReadWrite)
-	ASummonCard* SummonTarget;
+	ADeck* TargetDeck;
 
 public:
 	virtual bool IsValidAction_Implementation() override;

@@ -5,7 +5,7 @@
 #include "../PrototypeCardGame.h"
 #include "Card.generated.h"
 
-class UCardAction;
+class UAction;
 class USummoner;
 class UTeam;
 
@@ -16,14 +16,17 @@ class PROTOTYPECARDGAME_API ACard : public AActor
 
 public:
 	UPROPERTY(BlueprintReadWrite)
-	USummoner* OwningSummoner;
+	USummoner* OwningPlayer;
 
 	UPROPERTY(BlueprintReadWrite)
 	UTeam* ControllingTeam;
 
 	UPROPERTY(BlueprintReadWrite)
+	ECardLocation CardLocation;
+
+	UPROPERTY(BlueprintReadWrite)
 	ECardPosition CardPosition;
 
 	UPROPERTY(BlueprintReadWrite)
-	TArray<UCardAction*> AvailableActions;
+	TArray<UAction*> AvailableActions;
 };

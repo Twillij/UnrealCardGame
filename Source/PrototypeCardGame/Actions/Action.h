@@ -4,6 +4,8 @@
 #include "UObject/NoExportTypes.h"
 #include "Action.generated.h"
 
+class USummoner;
+
 UCLASS()
 class PROTOTYPECARDGAME_API UAction : public UObject
 {
@@ -11,7 +13,10 @@ class PROTOTYPECARDGAME_API UAction : public UObject
 	
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FText ActionName;
+	FText DisplayName;
+
+	UPROPERTY(BlueprintReadWrite)
+	USummoner* InitiatingPlayer;
 
 public:
 	UFUNCTION(BlueprintPure, BlueprintNativeEvent)
