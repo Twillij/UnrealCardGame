@@ -1,5 +1,5 @@
 #include "Zone.h"
-#include "../Cards/Card.h"
+#include "Cards/Card.h"
 
 void AZone::PlaceCard(ACard* NewCard, ECardPosition Position)
 {

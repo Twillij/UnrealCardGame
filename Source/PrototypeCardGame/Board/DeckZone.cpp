@@ -1,2 +1,2 @@
 #include "DeckZone.h"
-#include "../Cards/Card.h"
+#include "Cards/Card.h"

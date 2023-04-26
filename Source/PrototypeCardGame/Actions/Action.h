@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "PrototypeCardGame/PrototypeCardGame.h"
 #include "UObject/NoExportTypes.h"
 #include "Action.generated.h"
 
@@ -15,6 +16,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FText DisplayName;
 
+	UPROPERTY(BlueprintReadWrite)
+	EActionStatus ActionStatus = EActionStatus::NotAttempted;
+	
 	UPROPERTY(BlueprintReadWrite)
 	USummoner* InitiatingPlayer;
 

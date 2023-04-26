@@ -8,6 +8,19 @@ public class PrototypeCardGame : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "NavigationSystem", "AIModule", "Niagara", "EnhancedInput" });
-    }
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core",
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"HeadMountedDisplay",
+			"NavigationSystem",
+			"AIModule",
+			"Niagara",
+			"EnhancedInput"
+		});
+
+		PublicIncludePaths.AddRange(new string[] { "PrototypeCardGame" });
+	}
 }

@@ -1,5 +1,5 @@
 #include "DrawAction.h"
-#include "../Cards/Card.h"
+#include "Cards/Card.h"
 
 UDrawAction::UDrawAction()
 {

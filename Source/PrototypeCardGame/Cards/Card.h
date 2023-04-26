@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "../PrototypeCardGame.h"
+#include "PrototypeCardGame.h"
 #include "Card.generated.h"
 
 class UAction;

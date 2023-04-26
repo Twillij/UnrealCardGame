@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "../PrototypeCardGame.h"
+#include "PrototypeCardGame.h"
 #include "Zone.generated.h"
 
 class ACard;

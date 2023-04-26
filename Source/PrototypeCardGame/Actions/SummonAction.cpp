@@ -1,6 +1,6 @@
 #include "SummonAction.h"
-#include "../Board/Zone.h"
-#include "../Cards/Card.h"
+#include "Board/Zone.h"
+#include "Cards/Card.h"
 
 USummonAction::USummonAction()
 {

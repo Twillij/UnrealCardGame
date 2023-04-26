@@ -5,6 +5,7 @@
 #include "MatchGameMode.generated.h"
 
 class UTeam;
+class UTurn;
 
 UCLASS()
 class PROTOTYPECARDGAME_API AMatchGameMode : public AGameMode
@@ -13,8 +14,15 @@ class PROTOTYPECARDGAME_API AMatchGameMode : public AGameMode
 	
 public:
 	UPROPERTY(BlueprintReadWrite)
-	int TurnNumber = 0;
-
-	UPROPERTY(BlueprintReadWrite)
 	TArray<UTeam*> Teams;
+	
+	UPROPERTY(BlueprintReadWrite)
+	TArray<UTurn*> Turns;
+
+public:
+	UFUNCTION(BlueprintPure)
+	int GetTurnCount() const { return Turns.Num(); }
+	
+	UFUNCTION(BlueprintPure)
+	UTurn* GetCurrentTurn() const;
 };
