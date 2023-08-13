@@ -5,7 +5,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Action.generated.h"
 
-class USummoner;
+class AGamePlayerController;
 
 UCLASS()
 class UNREALCARDGAME_API UAction : public UObject
@@ -20,7 +20,7 @@ public:
 	EActionStatus ActionStatus = EActionStatus::NotAttempted;
 	
 	UPROPERTY(BlueprintReadWrite)
-	USummoner* InitiatingPlayer;
+	AGamePlayerController* InitiatingPlayer;
 
 public:
 	UFUNCTION(BlueprintPure, BlueprintNativeEvent)

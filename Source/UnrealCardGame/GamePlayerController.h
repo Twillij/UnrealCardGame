@@ -1,15 +1,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/Player.h"
-#include "Summoner.generated.h"
+#include "GameFramework/PlayerController.h"
+#include "GamePlayerController.generated.h"
 
 class UTeam;
 class ADeck;
 class AHand;
 
 UCLASS()
-class UNREALCARDGAME_API USummoner : public UPlayer
+class UNREALCARDGAME_API AGamePlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	

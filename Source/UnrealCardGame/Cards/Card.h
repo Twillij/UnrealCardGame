@@ -6,7 +6,7 @@
 #include "Card.generated.h"
 
 class UAction;
-class USummoner;
+class AGamePlayerController;
 class UTeam;
 
 UCLASS()
@@ -16,7 +16,7 @@ class UNREALCARDGAME_API ACard : public AActor
 
 public:
 	UPROPERTY(BlueprintReadWrite)
-	USummoner* OwningPlayer;
+	AGamePlayerController* OwningPlayer;
 
 	UPROPERTY(BlueprintReadWrite)
 	UTeam* ControllingTeam;
