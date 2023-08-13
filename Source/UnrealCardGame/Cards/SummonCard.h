@@ -13,6 +13,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "0"))
 	int Attack = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "1"))
-	int Health = 1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "10"))
+	int Health = 10;
 };

@@ -1,14 +1,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameMode.h"
-#include "MatchGameMode.generated.h"
+#include "GameFramework/GameModeBase.h"
+#include "SinglePlayerMode.generated.h"
 
 class UTeam;
 class UTurn;
 
 UCLASS()
-class UNREALCARDGAME_API AMatchGameMode : public AGameMode
+class UNREALCARDGAME_API ASinglePlayerMode : public AGameModeBase
 {
 	GENERATED_BODY()
 	
